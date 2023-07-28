@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+    /*
+    h1{   화면 한 줄 전체를 쓰는 태그: block level element (display라는 하나의 poroperty값)
+        border-color: red;
+        border-width: 5px;
+        border-style: solid;
+        display: inline; 
+    }
+    
+    a{    데이터 크기만큼만 쓰는 태그: inline level element
+        border-color: red;
+        border-width: 5px;
+        border-style: solid;
+        display: none;
+    }
+    */
+    h1, a{
+        border: red 5px dotted; /*순서는 상관없음*/
+    }
+
+    h3{
+        border:yellowgreen 5px solid;
+        padding: 20px;
+        margin: 10px;
+        display: block;
+        width: 50px;
+    } /*web에서 우클 후 검사 누르면 개발자도구 들어가서 box model 볼 수 있음*/
+</style>
+</head>
+<body>
+    <!--element(tag)간의 부피감을 비교해볼거야-->
+    <h1>CSS</h1> Cascading Style Sheets (<a href="https://ko.wikipedia.org/wiki/CSS">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language. 
+    
+    <!--box model: 부피감을 설정하는 법-->
+    <h3>test</h3>
+    <h3>test</h3>
+</body>
