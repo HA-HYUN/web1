@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+    #grid{
+        border: 5px solid lightblue;
+        display: grid; /**/
+        grid-template-columns: 150px 1fr;
+        /*fr은 전체 프레임을 쓴다는 뜻으로 이해하면 됨 1fr 1fr이라고 쓰면 1:1 의 비율로 분할*/
+    }
+    div{
+        border: 5px solid gray;
+    }
+    span{
+        border: 5px solid gray;
+    }
+</style>
+   
+</head>
+<body>
+    <div id="grid"> <!--부모 태그를 통해 디자인-->
+        <div>NAVIGATION</div> <!--무색무취의, 아무런 기능없이 단지 디자인을 위한 태그이고 block level element-->
+        <div>ARTICLE</div>
+    </div>
+<span>ROCKET</span> <!--div와 같지만 inline level element-->
+</body>
